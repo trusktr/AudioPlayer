@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	
+	
+	
+	<head>
+		<title>Audio Player</title>
+		<meta charset="utf-8" />
+		
+		<!-- INCLUDE THE STYLESHEET -->
+		<link rel="stylesheet" href="audio_player/audio_player.css" />
+		
+		<!-- INCLUDE THE SCRIPT ANYWHERE (IN HEAD OR BODY) -->
+		<script src="audio_player/audio_player.js"></script>
+		
+		<!-- YOUR CUSTOM CSS -->
+		<!-- Feel free to modify the player icons in the audio_player folder,
+			and change the width/height below to match your icon dimensions. -->
+		<style>
+			body {
+				background: black;
+			}
+			.audioPlayerButton {
+				width: 18px;
+				height: 18px;
+			}
+		</style>
+	</head>
+	
+	
+	
+	<body>
+		
+		<!-- MAKE AS MANY .audioPlayerButton ELEMENTS AS YOU WANT. -->
+		<div class="audioPlayerButton">
+			<a href="music/zorelli-zigatos.mp3" class="audio_link"></a>
+		</div>
+		
+		<div class="audioPlayerButton">
+			<a href="music/Zorelli-StiffNeckedFools.mp3" class="audio_link"></a>
+		</div>
+		
+		<div class="audioPlayerButton">
+			<a href="music/Zorelli-ZigatosDubSection.mp3" class="audio_link"></a>
+		</div>
+		
+		<!-- You can put these buttons anywhere. FOr example, if you put these buttons
+			next to the titles of your songs or something, then you can write some jQuery to control
+			the buttons whenever someone clicks on your song titles. FOr exampmle:
+			
+				$('.songTitleElement').on('click', function() {
+					var _thisSong = $(this),
+						songId = _thisSong.attr('data-id'); // store song IDs in the data-id attribute of your song title element.
+					
+					$('a.audio_link[data-id="'+songId+'"]').trigger('click'); // trigger an imaginary "click" on the audio player button that has a matching ID.
+				});
+		-->
+	
+	</body>
+
+	
+	
+</html>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
